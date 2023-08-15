@@ -3,44 +3,68 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
+import CartIcon from "./CartIcon";
 
 const Menu = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
-  const handleMenu = () => {
-    setOpenMenu(!openMenu);
-  };
+  //create temporary user
+  const [user, setUser] = useState(false);
 
-  const links = [
-    { id: 1, title: "Home Page", url: "/" },
-    { id: 2, title: "Menu", url: "/menu" },
-    { id: 3, title: "Opening Hours", url: "/" },
-    { id: 4, title: "Contact Us", url: "/" },
-  ];
+  const links = [{ id: 2, title: "MENU", url: "/menu" }];
 
   return (
-    <div onClick={handleMenu}>
+    <div>
       {openMenu ? (
-        <div
-          className="cursor-pointer text-2xl font-bold"
-          style={{ color: "#B8C6AD" }}
-        >
-          X
+        <div>
+          <div
+            className="cursor-pointer text-3xl font-bold"
+            style={{ color: "var(--darker-green)" }}
+            onClick={() => setOpenMenu(!openMenu)}
+          >
+            X
+          </div>
+          <div className="bg-white flex flex-col justify-center items-center gap-6 absolute right-0 top-24 left-0 h-[calc(100vh-3rem)] z-10">
+            {links.map((link) => (
+              <div
+                className="text-4xl font-bold"
+                style={{
+                  color: "var(--darker-green)",
+                }}
+                onClick={() => setOpenMenu(!openMenu)}
+              >
+                <Link key={link.id} href={link.url}>
+                  {link.title}
+                </Link>
+              </div>
+            ))}
+            <div
+              className="text-4xl font-bold"
+              style={{ color: "var(--darker-green)" }}
+            >
+              {user ? (
+                <Link href={"/orders"} onClick={() => setOpenMenu(!openMenu)}>
+                  ORDERS
+                </Link>
+              ) : (
+                <Link href={"/login"} onClick={() => setOpenMenu(!openMenu)}>
+                  LOGIN
+                </Link>
+              )}
+            </div>
+            <div className="text-4xl font-bold">
+              <CartIcon />
+            </div>
+          </div>
         </div>
       ) : (
         <div className="cursor-pointer">
-          <FaBars style={{ color: "#B8C6AD", fontSize: "20px" }} />
+          <FaBars
+            style={{ color: "var(--darker-green)", fontSize: "24px" }}
+            onClick={() => setOpenMenu(!openMenu)}
+          />
         </div>
       )}
-
-      {openMenu &&
-        links.map((link) => (
-          <div className="bg-red-500">
-            <Link key={link.id} href={link.url}>
-              {link.title}
-            </Link>
-          </div>
-        ))}
     </div>
   );
 };
