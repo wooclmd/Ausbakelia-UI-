@@ -24,7 +24,7 @@ const Menu = () => {
           >
             X
           </div>
-          <div className="bg-white flex flex-col justify-center items-center gap-6 absolute right-0 top-24 left-0 h-[calc(100vh-3rem)] z-10">
+          <div className="bg-white flex flex-col justify-center items-center gap-6 absolute right-0 top-24 left-0 h-full z-10">
             {links.map((link) => (
               <div
                 className="text-4xl font-bold"
