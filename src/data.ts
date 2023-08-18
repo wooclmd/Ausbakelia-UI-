@@ -41,6 +41,16 @@ type Products = {
   option2?: ProductOption[];
 }[];
 
+type Product = {
+  id: number;
+  title: string;
+  desc: string;
+  img: string;
+  price: number;
+  option1?: ProductOption[];
+  option2?: ProductOption[];
+};
+
 export const coffee: Products = [
   {
     id: 1,
@@ -155,3 +165,31 @@ export const savouries: Products = [
     price: 99,
   },
 ];
+
+export const singleProduct: Product = {
+  id: 1,
+  title: "Flat White",
+  desc: "Flat White. Regular, unsweetened. A common 'short white coffee' found in New Zealand and Australia, offering a richer coffee aroma.",
+  img: "/fw.jpg",
+  price: 135,
+  option1: [
+    {
+      title: "Hot",
+      additionalPrice: 0,
+    },
+    {
+      title: "Cold",
+      additionalPrice: 0,
+    },
+  ],
+  option2: [
+    {
+      title: "Medium",
+      additionalPrice: 0,
+    },
+    {
+      title: "Large",
+      additionalPrice: 20,
+    },
+  ],
+};

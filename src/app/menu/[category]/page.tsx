@@ -5,10 +5,10 @@ import Image from "next/image";
 
 const CategoryPage = () => {
   return (
-    <div className="p-2 flex flex-wrap">
+    <div className="p-2 flex flex-wrap md:p-4">
       {coffee.map((item) => (
         <Link
-          className="w-full h-[60vh] sm:w-1/2 lg:w-1/3"
+          className="w-full h-[60vh] mt-4 sm:w-1/2 lg:w-1/3"
           key={item.id}
           href={`/product/${item.id}`}
         >
@@ -25,9 +25,16 @@ const CategoryPage = () => {
           )}
 
           {/* Text container */}
-          <div>
-            <h1>{item.title}</h1>
-            <h2>{item.price}</h2>
+          <div className="flex flex-col gap-2">
+            <div className="flex items-center justify-center gap-1 text-gray-500">
+              <h1 className="font-bold">{item.title}</h1>
+              <h2>${item.price}</h2>
+            </div>
+            <div className="flex items-center justify-center">
+              <button className="text-white px-2 py-1 w-1/5 text-sm bg-[#849c71] hover:text-[#849c71] hover:bg-white">
+                Select
+              </button>
+            </div>
           </div>
         </Link>
       ))}
