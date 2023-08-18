@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const Story = () => {
   return (
-    <div className="p-2 h-[calc(100vh-1rem)] flex flex-col gap-2 md:flex-row md:p-4 lg:flex-row lg:p-4 lg:h-[calc(100vh-12rem)]">
+    <div className="p-2 h-[calc(100vh-1rem)] flex flex-col gap-2 md:flex-row md:p-4 lg:h-[calc(100vh-12rem)]">
       {/* Image container */}
-      <div className="relative w-full md:w-1/2 lg:w-1/2 h-[50%] md:h-auto lg:h-auto">
+      <div className="relative w-full md:w-1/2 h-[50%] md:h-auto md:flex-1">
         <Image
           src={"/story.jpg"}
           layout="fill"
@@ -16,7 +16,7 @@ const Story = () => {
 
       {/* Text container */}
       <div
-        className=" md:flex-1 md:p-6 lg:flex-1 lg:p-10"
+        className=" md:flex-1 md:p-6  lg:p-10"
         style={{ backgroundColor: "rgba(236, 240, 233, 0.5)" }}
       >
         <span
