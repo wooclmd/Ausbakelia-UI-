@@ -32,7 +32,7 @@ const Price = ({ price, option1, option2, id }: Props) => {
   }, [quantity, selected1, selected2, option1, option2, price]);
 
   return (
-    <div className="flex flex-col gap-3 justify-around">
+    <div className="flex flex-col gap-3 justify-around md:gap-5">
       <p className="font-bold md:text-xl">$ {total}</p>
       {/* Option container */}
       {option1 && (
@@ -89,7 +89,7 @@ const Price = ({ price, option1, option2, id }: Props) => {
           </div>
         </div>
         <div>
-          <button className="p-1 w-40 ring-1 ring-[var(--darker-green)] bg-[var(--darker-green)] text-white">
+          <button className="p-1 w-40 md:w-60 ring-1 ring-[var(--darker-green)] bg-[var(--darker-green)] text-white">
             Add to Cart
           </button>
         </div>

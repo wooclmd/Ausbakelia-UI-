@@ -4,10 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div
-      className="p-3 h-12 flex flex-col items-center gap-4 text-gray-500"
-      // style={{ color: "var(--darker-green)" }}
-    >
+    <div className="p-3 h-12 flex flex-col items-center gap-4 text-gray-500">
       <div className="flex items-center gap-5 text-xl">
         <a href="https://www.facebook.com/Ausbakelia" target="_blank">
           <FaFacebookF />

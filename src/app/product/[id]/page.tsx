@@ -5,7 +5,7 @@ import Price from "@/app/components/Price";
 
 const SingleProductPage = () => {
   return (
-    <div className="p-2 md:p-4 flex flex-col gap-2 h-screen md:h-[60vh] md:flex-row md:gap-4">
+    <div className="p-2 md:p-6 flex flex-col gap-2 h-screen md:h-[60vh] md:flex-row md:gap-4">
       {/* Image container */}
       {singleProduct.img && (
         <div className="relative w-full h-1/2 md:flex-1 md:h-full">

@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const data = [
   {
@@ -44,12 +45,13 @@ const Slider = () => {
         }}
       >
         <h1>{data[currentSlide].title}</h1>
-        <button
+        <Link
+          href={"/menu"}
           className="text-white px-4 py-2 text-sm lg:text-base"
           style={{ backgroundColor: "var(--darker-green)" }}
         >
           Order Now
-        </button>
+        </Link>
       </div>
 
       {/* Images part */}

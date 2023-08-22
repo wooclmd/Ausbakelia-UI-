@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Offer = () => {
   return (
@@ -21,12 +22,13 @@ const Offer = () => {
           to grinding – all meticulously curated by our in-house baristas,
           giving it a unique coffee essence.
         </p>
-        <button
+        <Link
+          href={"/menu"}
           className="px-4 py-2 bg-white font-bold"
           style={{ color: "#B8C6AD" }}
         >
           Order Now
-        </button>
+        </Link>
       </div>
     </div>
   );

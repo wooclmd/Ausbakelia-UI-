@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const CategoryPage = () => {
   return (
-    <div className="p-2 flex flex-wrap md:p-4">
+    <div className="p-2 flex flex-wrap">
       {coffee.map((item) => (
         <Link
           className="w-full h-[60vh] mt-4 sm:w-1/2 lg:w-1/3"

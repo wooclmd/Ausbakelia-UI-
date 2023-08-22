@@ -16,7 +16,7 @@ const Menu = () => {
   return (
     <div>
       {openMenu ? (
-        <div>
+        <div className="mt-1">
           <div
             className="cursor-pointer text-3xl font-bold"
             style={{ color: "var(--darker-green)" }}
@@ -24,7 +24,7 @@ const Menu = () => {
           >
             X
           </div>
-          <div className="bg-white flex flex-col justify-center items-center gap-6 absolute right-0 top-24 left-0 h-full z-10">
+          <div className="bg-white flex flex-col justify-center items-center gap-6 absolute right-0 top-37 left-0 h-full z-10">
             {links.map((link) => (
               <div
                 className="text-4xl font-bold"
