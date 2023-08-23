@@ -1,6 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Ausbakelia || Login",
+  description: "Login page",
+};
+
 const LoginPage = () => {
   return (
     <div className="p-2 h-screen flex flex-col gap-4 md:flex-row items-center md:h-[calc(100vh-12rem)] md:p-8 md:w-[70%] md:m-auto">
@@ -23,7 +28,12 @@ const LoginPage = () => {
           <span>Sign in with Facebook</span>
         </div>
         <p>
-          Have a problem? <span className="font-bold">Contact us</span>
+          Have a problem?{" "}
+          <span className="underline">
+            <a href="https://www.facebook.com/Ausbakelia" target="_blank">
+              Contact us
+            </a>
+          </span>
         </p>
       </div>
     </div>

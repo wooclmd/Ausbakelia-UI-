@@ -1,6 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Ausbakelia || Our Story",
+  description: "Our story",
+};
+
 const Story = () => {
   return (
     <div className="p-2 h-screen flex flex-col gap-2 md:flex-row md:p-4 lg:h-[calc(100vh-12rem)] md:w-[70%] md:m-auto">

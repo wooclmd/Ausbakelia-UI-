@@ -53,7 +53,7 @@ const Menu = () => {
               )}
             </div>
             <div className="text-4xl font-bold">
-              <CartIcon />
+              <CartIcon setOpenMenu={setOpenMenu} openMenu={openMenu} />
             </div>
           </div>
         </div>

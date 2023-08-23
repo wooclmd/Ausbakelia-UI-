@@ -3,6 +3,11 @@ import { coffee } from "@/data";
 import Link from "next/link";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Ausbakelia || Menu",
+  description: "Menu page",
+};
+
 const CategoryPage = () => {
   return (
     <div className="p-2 flex flex-wrap">

@@ -1,6 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Ausbakelia || Cart",
+  description: "Cart page",
+};
+
 const page = () => {
   return (
     <div className="p-2 md:p-12 h-[calc(100vh-9rem)] md:h-[calc(100vh-12rem)] flex flex-col md:flex-row">
