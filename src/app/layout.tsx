@@ -20,7 +20,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <Notification />
         <Navbar />
-        <div className="mt-40 md:mt-32">{children}</div>
+        <div className="md:mt-32" style={{ marginTop: "120px" }}>
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
