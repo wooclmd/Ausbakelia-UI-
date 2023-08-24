@@ -27,15 +27,14 @@ const Menu = () => {
           <div className="bg-white flex flex-col justify-center items-center gap-6 absolute right-0 top-37 left-0 h-full z-10">
             {links.map((link) => (
               <div
+                key={link.id}
                 className="text-4xl font-bold"
                 style={{
                   color: "var(--darker-green)",
                 }}
                 onClick={() => setOpenMenu(!openMenu)}
               >
-                <Link key={link.id} href={link.url}>
-                  {link.title}
-                </Link>
+                <Link href={link.url}>{link.title}</Link>
               </div>
             ))}
             <div
