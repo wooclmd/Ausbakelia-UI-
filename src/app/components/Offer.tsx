@@ -18,9 +18,9 @@ const Offer = () => {
       <div className="p-6 flex-1 text-white flex flex-col gap-5 items-center justify-center">
         <h1 className="text-2xl font-bold">Moon Festival Coffee Mix Box</h1>
         <p style={{ textAlign: "justify" }}>
-          Ausbakelia's coffee undergoes a journey from bean selection, roasting,
-          to grinding – all meticulously curated by our in-house baristas,
-          giving it a unique coffee essence.
+          Ausbakelia&apos;s coffee undergoes a journey from bean selection,
+          roasting, to grinding – all meticulously curated by our in-house
+          baristas, giving it a unique coffee essence.
         </p>
         <Link
           href={"/menu"}
