@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="p-3 border-b bg-white"
+      className="p-3 border-b bg-white fixed w-full top-12 z-20 mb-2"
       style={{ borderBottomColor: "var(--bg-color1)" }}
     >
       <div

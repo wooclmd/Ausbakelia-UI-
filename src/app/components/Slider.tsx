@@ -35,7 +35,7 @@ const Slider = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="flex flex-col h-[calc(100vh-8rem)] gap-2 lg:flex-row">
+    <div className="flex flex-col h-[calc(100vh-8rem)] gap-2 lg:flex-row mt-32">
       {/* Text part */}
       <div
         className="h-1/2 flex flex-col gap-5 items-center justify-center font-bold text-center  md:text-xl lg:text-2xl lg:flex-1 lg:h-full lg:p-4"
