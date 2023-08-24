@@ -1,7 +1,6 @@
 import React from "react";
 import { menu } from "@/data";
 import Link from "next/link";
-import styles from "./page.module.css";
 export const metadata = {
   title: "Ausbakelia || Menu",
   description: "Menu page",
@@ -9,7 +8,7 @@ export const metadata = {
 
 const MenuPage = () => {
   return (
-    <div className="p-2 md:p-4 lg:p-8 h-[calc(100vh-6rem)] flex flex-col gap-2 md:flex-row md:h-[65vh]">
+    <div className="p-2 md:p-4 lg:p-8 h-[calc(100vh-6rem)] flex flex-col gap-2 md:flex-row md:h-[63vh]">
       {menu.map((category) => (
         <Link
           href={"/menu/" + category.slug}

@@ -8,7 +8,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div className="p-2 md:p-12 h-[calc(100vh-9rem)] md:h-[65vh] flex flex-col md:flex-row">
+    <div className="p-2 md:p-12 h-[calc(100vh-9rem)] md:h-[63vh] flex flex-col md:flex-row">
       {/* Items container */}
       <div className="flex flex-col gap-3 h-1/2 p-4 overflow-y-scroll md:h-full md:w-2/3">
         {/* Single item container */}
