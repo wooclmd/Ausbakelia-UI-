@@ -1,10 +1,13 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Menu from "./Menu";
 import Link from "next/link";
 import CartIcon from "./CartIcon";
 import Image from "next/image";
 
 const Navbar = () => {
+  const [openMenu, setOpenMenu] = useState(false);
   // Temporary data
   const user = false;
 
@@ -39,7 +42,7 @@ const Navbar = () => {
             ) : (
               <Link href={"/orders"}>ORDERS</Link>
             )}
-            <CartIcon />
+            <CartIcon setOpenMenu={setOpenMenu} openMenu={openMenu} />
           </div>
         </div>
       </div>
