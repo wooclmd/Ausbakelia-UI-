@@ -24,7 +24,7 @@ const Menu = () => {
           >
             X
           </div>
-          <div className="bg-white flex flex-col justify-center items-center gap-6 absolute right-0 top-37 left-0 h-full z-10">
+          <div className="bg-white flex flex-col justify-center items-center gap-6 absolute right-0 top-35 left-0 h-full z-10">
             {links.map((link) => (
               <div
                 key={link.id}

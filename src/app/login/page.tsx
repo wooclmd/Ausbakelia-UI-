@@ -8,7 +8,7 @@ export const metadata = {
 
 const LoginPage = () => {
   return (
-    <div className="p-2 h-screen flex flex-col gap-4 md:flex-row items-center md:h-[calc(100vh-12rem)] md:p-8 md:w-[70%] md:m-auto">
+    <div className="p-2 h-screen flex flex-col gap-4 md:flex-row items-center md:h-[65vh] md:p-8 md:w-[70%] md:m-auto">
       {/* Image container */}
       <div className="relative w-full h-1/2 md:flex-1 md:h-full">
         <Image src={"/login.jpg"} alt="Login" fill className="object-cover" />

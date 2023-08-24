@@ -10,7 +10,7 @@ export const metadata = {
 
 const Story = () => {
   return (
-    <div className="p-2 h-screen flex flex-col gap-2 md:flex-row md:p-4 lg:h-[calc(100vh-12rem)] md:w-[70%] md:m-auto">
+    <div className="p-2 h-screen flex flex-col gap-2 md:flex-row md:p-4 md:h-[65vh] md:w-[70%] md:m-auto">
       {/* Image container */}
       <div className="relative w-full md:w-1/2 h-[50%] md:h-auto md:flex-1">
         <Image
@@ -23,7 +23,7 @@ const Story = () => {
 
       {/* Text container */}
       <div
-        className=" md:flex-1 md:p-6  lg:p-10"
+        className=" md:flex-1 md:p-6  lg:p-10 text-gray-500"
         style={{ backgroundColor: "rgba(236, 240, 233, 0.5)" }}
       >
         <span
