@@ -11,10 +11,10 @@ const Offer = () => {
       style={{ backgroundColor: "#B8C6AD" }}
     >
       {/* Image container */}
-      <div className="flex-1 p-2 flex items-center justify-center gap-2">
-        <Image src={"/offer.jpg"} alt="Offer1" width={180} height={100} />
-        <Image src={"/offer2.jpg"} alt="Offer2" width={180} height={100} />
-        <Image src={"/offer3.jpg"} alt="Offer3" width={180} height={100} />
+      <div className="flex-1 p-2 flex items-center justify-center md:gap-4">
+        <Image src={"/offer.jpg"} alt="Offer1" width={160} height={100} />
+        <Image src={"/offer2.jpg"} alt="Offer2" width={160} height={100} />
+        <Image src={"/offer3.jpg"} alt="Offer3" width={160} height={100} />
       </div>
       {/* Text container */}
       <div className="p-6 flex-1 text-white flex flex-col gap-5 items-center justify-center">
