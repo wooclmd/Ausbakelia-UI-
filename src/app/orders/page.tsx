@@ -1,7 +1,7 @@
 import React from "react";
 
 export const metadata = {
-  title: "Ausbakelia || Orders",
+  title: "Ausbakelia | Orders",
   description: "Orders page",
 };
 

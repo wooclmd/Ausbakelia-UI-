@@ -2,7 +2,7 @@ import React from "react";
 import { menu } from "@/data";
 import Link from "next/link";
 export const metadata = {
-  title: "Ausbakelia || Menu",
+  title: "Ausbakelia | Menu",
   description: "Menu page",
 };
 

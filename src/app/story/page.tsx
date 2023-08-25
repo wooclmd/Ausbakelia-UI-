@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Ausbakelia || Our Story",
+  title: "Ausbakelia | Our Story",
   description: "Our story",
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Ausbakelia || Login",
+  title: "Ausbakelia | Login",
   description: "Login page",
 };
 
