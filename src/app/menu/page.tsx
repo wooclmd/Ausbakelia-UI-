@@ -1,12 +1,24 @@
 import React from "react";
-import { menu } from "@/data";
 import Link from "next/link";
+import { MenuType } from "@/types/types";
+
 export const metadata = {
   title: "Ausbakelia | Menu",
   description: "Menu page",
 };
 
-const MenuPage = () => {
+const getCat = async () => {
+  const res = await fetch("http://localhost:3000/api/category", {
+    cache: "no-store",
+  });
+  if (!res.ok) {
+    throw new Error("Failed");
+  }
+  return res.json();
+};
+
+const MenuPage = async () => {
+  const menu: MenuType = await getCat();
   return (
     <div className="p-2 md:p-4 lg:p-8 h-[calc(100vh-6rem)] flex flex-col gap-2 md:flex-row md:h-[63vh]">
       {menu.map((category) => (
